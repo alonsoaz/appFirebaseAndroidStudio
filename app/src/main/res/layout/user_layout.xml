@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="165dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/textDNIshow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textDNIshow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/textNameshow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblDNI"
+        app:layout_constraintTop_toBottomOf="@+id/imgPic" />
+
+    <TextView
+        android:id="@+id/textNameshow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLNshow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblNAME"
+        app:layout_constraintTop_toBottomOf="@+id/textDNIshow" />
+
+    <TextView
+        android:id="@+id/textLNshow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblLN"
+        app:layout_constraintTop_toBottomOf="@+id/textNameshow" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="201dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/LogOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLNshow" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/welcome"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imgPic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDNI"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="230dp"
+        android:text="@string/enter_DNI"
+        app:layout_constraintBottom_toTopOf="@+id/lblNAME"
+        app:layout_constraintEnd_toStartOf="@+id/textDNIshow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblNAME"
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="48dp"
+        android:text="@string/enter_Name"
+        app:layout_constraintBottom_toTopOf="@+id/lblLN"
+        app:layout_constraintEnd_toStartOf="@+id/textNameshow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDNI" />
+
+    <TextView
+        android:id="@+id/lblLN"
+        android:layout_width="67dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="152dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="41dp"
+        android:text="@string/enter_LastName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textLNshow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNAME" />
+</android.support.constraint.ConstraintLayout>
